@@ -9,8 +9,12 @@ create htpasswd  via docker
 ## build
 
 ```bash
+# alpine
 git clone https://github.com/MathiasStadler/docker-htpasswd/edit/master/README.md
 docker build -t docker-htpasswd -f docker-htpasswd/Dockerfile .
+
+# debain-buster
+docker build -t docker-htpasswd -f docker-htpasswd/debian-buster/Dockerfile .
 ```
 
 ## usage
